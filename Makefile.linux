@@ -1,0 +1,19 @@
+# Makefile for Linux
+
+all: epoll-accept epoll-connect epoll-file epoll-signal epoll-timer epoll-user
+
+clean:
+	rm epoll-accept epoll-connect epoll-file epoll-signal epoll-timer epoll-user
+
+epoll-accept: epoll-accept.c
+	gcc -g $< -o $@
+epoll-connect: epoll-connect.c
+	gcc -g $< -o $@
+epoll-file: epoll-file.c
+	gcc -g $< -o $@
+epoll-signal: epoll-signal.c
+	gcc -g $< -o $@
+epoll-timer: epoll-timer.c
+	gcc -g $< -o $@
+epoll-user: epoll-user.c
+	gcc -g $< -o $@

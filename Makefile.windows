@@ -1,0 +1,19 @@
+# Makefile for Windows
+
+all: iocp-accept.exe iocp-connect.exe iocp-file.exe iocp-pipe.exe iocp-timer.exe iocp-user.exe
+
+clean:
+	rm iocp-accept.exe iocp-connect.exe iocp-file.exe iocp-pipe.exe iocp-timer.exe iocp-user.exe
+
+iocp-accept.exe: iocp-accept.c
+	x86_64-w64-mingw32-gcc -g $< -o $@ -lws2_32
+iocp-connect.exe: iocp-connect.c
+	x86_64-w64-mingw32-gcc -g $< -o $@ -lws2_32
+iocp-file.exe: iocp-file.c
+	x86_64-w64-mingw32-gcc -g $< -o $@
+iocp-pipe.exe: iocp-pipe.c
+	x86_64-w64-mingw32-gcc -g $< -o $@
+iocp-timer.exe: iocp-timer.c
+	x86_64-w64-mingw32-gcc -g $< -o $@
+iocp-user.exe: iocp-user.c
+	x86_64-w64-mingw32-gcc -g $< -o $@

@@ -1,0 +1,19 @@
+# Makefile for FreeBSD
+
+all: kqueue-accept kqueue-connect kqueue-file kqueue-signal kqueue-timer kqueue-user
+
+clean:
+	rm kqueue-accept kqueue-connect kqueue-file kqueue-signal kqueue-timer kqueue-user
+
+kqueue-accept: kqueue-accept.c
+	clang -g $< -o $@
+kqueue-connect: kqueue-connect.c
+	clang -g $< -o $@
+kqueue-file: kqueue-file.c
+	clang -g $< -o $@
+kqueue-signal: kqueue-signal.c
+	clang -g $< -o $@
+kqueue-timer: kqueue-timer.c
+	clang -g $< -o $@
+kqueue-user: kqueue-user.c
+	clang -g $< -o $@
