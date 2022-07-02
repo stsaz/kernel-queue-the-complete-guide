@@ -1861,7 +1861,7 @@ Now for each received event we read our object pointer from `OVERLAPPED_ENTRY.lp
 		// handle write event
 ```
 
-> I could never understand why the context objects for active I/O operations are called overlapped objects/events in Windows. And I still can't comprehend this idea - what overlaps with what here exactly?
+> If you are wondering about the term overlapped used by Windows, it is actually used as a synonym of [asynchronous](https://docs.microsoft.com/en-us/windows/win32/sync/synchronization-and-overlapped-input-and-output).
 
 ### User-triggered events with IOCP
 
