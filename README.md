@@ -1,6 +1,6 @@
 # Kernel Queue: The Complete Guide
 
-[`Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O`](kernel-queue-complete-guide.md)
+[Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O](kernel-queue-complete-guide.md)
 
 To build all examples on Linux you can do:
 
