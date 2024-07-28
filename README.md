@@ -1,3 +1,5 @@
+This repo is moved here: https://github.com/stsaz/cpspg
+
 # Kernel Queue: The Complete Guide
 
 [Kernel Queue: The Complete Guide On The Most Essential Technology For High-Performance I/O](kernel-queue-complete-guide.md)
